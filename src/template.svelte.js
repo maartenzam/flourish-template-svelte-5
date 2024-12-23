@@ -5,11 +5,19 @@ export var data = {};
 // If your template includes data tables, use this variable to access the data.
 // Each of the 'datasets' in data.json file will be available as properties of the data.
 
-export var state = $state({
-	radius: 10,
-	stroke: 1,
-	color: "#FF0000"
-});
+class vizState {
+  radius = $state()
+  stroke = $state()
+  color = $state()
+
+  constructor(radius, stroke, color) {
+    this.radius = radius;
+    this.stroke = stroke;
+    this.color = color;
+  }
+}
+
+export var state = new vizState(10, 1, "#FF0000")
 
 // The draw function is called when the template first loads
 export function draw() {

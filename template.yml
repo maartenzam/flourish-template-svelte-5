@@ -27,20 +27,20 @@ settings:
   # individual visualisations made with this template.
   #
   # Available types:
-  # • "number" >> gives a number input. Optionally add "min:", "max:", and "step:" properties.
+  # • "number" >> gives a number input. Optionally add "min::  "max::  and "step:" properties.
   # • "string" >> gives an text input
   # • "text" >> gives a textarea
   # • "boolean" >> gives a checkbox
   # • "color" >> gives a color picker
 
-  - Viz Title # Headings can be used to break up the settings into collapsible sections
+  - Circle properties # Headings can be used to break up the settings into collapsible sections
   - property: radius
     name: Radius
     type: number
     description: The radius of the circle
   - property: stroke
     name: Stroke
-    description: 'The thickness of the circle’s border, between 0 and 5'
+    description: 'The thickness of the circle’s border'
     type: number
   - property: color
     name: Color
