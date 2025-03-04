@@ -11,10 +11,11 @@ export var state = {
 };
 
 // Create a separate reactive store for internal Svelte use
-let reactiveState = $state({ ...state });
+let reactiveState = $state({});
 
 // The draw function is called when the template first loads
 export function draw() {
+  reactiveState = { ...state };
   reactiveState.data = data;
 
   mount(Viz, {
